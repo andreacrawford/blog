@@ -13,3 +13,55 @@
  *= require_tree .
  *= require_self
  */
+
+ .top-content {
+  height: 300px;
+ }
+
+.parallax {
+  background-image: url("carrots.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo {
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 6.5em;
+  color: #537A2D;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+}
+
+.navbar-default .navbar-nav>li>a {
+  text-decoration: none;
+  color: #537A2D;
+  padding: 10px;
+}
+
+.navbar-default {
+  border-color: transparent;
+  background-color: transparent;
+  text-align: center;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+}
