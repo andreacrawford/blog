@@ -1,0 +1,144 @@
+/* line 5, /Users/andrea/Documents/Code/School/Blog/app/assets/stylesheets/articles.scss */
+.blog-content {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+/* line 10, /Users/andrea/Documents/Code/School/Blog/app/assets/stylesheets/articles.scss */
+.blog-content img {
+  padding: 20px 0;
+  max-width: 100%;
+}
+
+/* line 15, /Users/andrea/Documents/Code/School/Blog/app/assets/stylesheets/articles.scss */
+.article a {
+  color: #537A2D;
+  font-weight: 400;
+  padding-top: 10px;
+}
+
+/* line 21, /Users/andrea/Documents/Code/School/Blog/app/assets/stylesheets/articles.scss */
+.article a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+/* line 26, /Users/andrea/Documents/Code/School/Blog/app/assets/stylesheets/articles.scss */
+h2 {
+  color: #537A2D;
+}
+/* line 6, /Users/andrea/Documents/Code/School/Blog/app/assets/stylesheets/static_pages.scss */
+h1 {
+  text-align: center;
+  color: #537A2D;
+}
+
+/* line 11, /Users/andrea/Documents/Code/School/Blog/app/assets/stylesheets/static_pages.scss */
+h3 {
+  color: #537A2D;
+}
+
+/* line 15, /Users/andrea/Documents/Code/School/Blog/app/assets/stylesheets/static_pages.scss */
+.content {
+  width: 75%;
+  margin: 0 auto;
+}
+
+/* line 20, /Users/andrea/Documents/Code/School/Blog/app/assets/stylesheets/static_pages.scss */
+.flex-container {
+  height: 100vh;
+  display: flex;
+  margin: 20px;
+  flex-direction: row;
+}
+
+/* line 27, /Users/andrea/Documents/Code/School/Blog/app/assets/stylesheets/static_pages.scss */
+.left {
+  width: 60%;
+  overflow: scroll;
+  margin: 10px;
+}
+
+/* line 33, /Users/andrea/Documents/Code/School/Blog/app/assets/stylesheets/static_pages.scss */
+.right {
+  display: flex;
+  width: 30%;
+  margin: 10px;
+}
+
+/* line 39, /Users/andrea/Documents/Code/School/Blog/app/assets/stylesheets/static_pages.scss */
+.image-container {
+  width: 120px;
+  flex-wrap: nowrap;
+  margin-right: 20px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
+
+ .top-content {
+  height: 300px;
+ }
+
+.parallax {
+  background-image: url(/assets/carrots.jpg);
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo {
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 6.5em;
+  color: #537A2D;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 10px;
+}
+
+nav li {
+  display: inline-block;
+}
+
+.navbar-default .navbar-nav>li>a {
+  text-decoration: none;
+  color: #537A2D;
+  padding: 10px;
+}
+
+.navbar-default {
+  border-color: transparent;
+  background-color: transparent;
+  text-align: center;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+@media (min-width: 768px) {
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+}
