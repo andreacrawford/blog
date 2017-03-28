@@ -1,0 +1,188 @@
+/* line 1, /Users/andrea/Documents/Code/School/Blog/app/assets/stylesheets/articles.scss */
+.blog-content {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+/* line 6, /Users/andrea/Documents/Code/School/Blog/app/assets/stylesheets/articles.scss */
+.blog-content img {
+  padding: 20px 0;
+  max-width: 100%;
+}
+
+/* line 11, /Users/andrea/Documents/Code/School/Blog/app/assets/stylesheets/articles.scss */
+.article-preview a {
+  color: #537A2D;
+  font-weight: 400;
+  padding-top: 10px;
+}
+
+/* line 17, /Users/andrea/Documents/Code/School/Blog/app/assets/stylesheets/articles.scss */
+.article-preview a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+/* line 22, /Users/andrea/Documents/Code/School/Blog/app/assets/stylesheets/articles.scss */
+h2 {
+  color: #537A2D;
+}
+
+/* line 26, /Users/andrea/Documents/Code/School/Blog/app/assets/stylesheets/articles.scss */
+.small-img {
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+/* line 31, /Users/andrea/Documents/Code/School/Blog/app/assets/stylesheets/articles.scss */
+.article-list {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* line 36, /Users/andrea/Documents/Code/School/Blog/app/assets/stylesheets/articles.scss */
+.article-preview {
+  padding: 10px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* line 42, /Users/andrea/Documents/Code/School/Blog/app/assets/stylesheets/articles.scss */
+.publish-date {
+  color: gray;
+  font-size: .9em;
+  padding-top: 20px;
+}
+/* line 1, /Users/andrea/Documents/Code/School/Blog/app/assets/stylesheets/static_pages.scss */
+h1 {
+  text-align: center;
+  color: #537A2D;
+}
+
+/* line 6, /Users/andrea/Documents/Code/School/Blog/app/assets/stylesheets/static_pages.scss */
+h3 {
+  color: #537A2D;
+}
+
+/* line 10, /Users/andrea/Documents/Code/School/Blog/app/assets/stylesheets/static_pages.scss */
+.content {
+  width: 75%;
+  margin: 0 auto;
+}
+
+/* line 15, /Users/andrea/Documents/Code/School/Blog/app/assets/stylesheets/static_pages.scss */
+.flex-container {
+  height: 100vh;
+  display: flex;
+  margin: 20px;
+  flex-direction: row;
+}
+
+/* line 22, /Users/andrea/Documents/Code/School/Blog/app/assets/stylesheets/static_pages.scss */
+.left {
+  width: 60%;
+  margin: 10px;
+}
+
+/* line 27, /Users/andrea/Documents/Code/School/Blog/app/assets/stylesheets/static_pages.scss */
+.right {
+  display: flex;
+  width: 30%;
+  margin: 60px 10px 10px 10px;
+}
+
+/* line 33, /Users/andrea/Documents/Code/School/Blog/app/assets/stylesheets/static_pages.scss */
+.image-container {
+  width: 120px;
+  flex-wrap: nowrap;
+  margin-right: 20px;
+}
+
+/* line 39, /Users/andrea/Documents/Code/School/Blog/app/assets/stylesheets/static_pages.scss */
+.featured-image {
+  max-width: 800px;
+  display: inline-block;
+  flex-wrap: nowrap;
+  margin-bottom: 20px;
+}
+
+/* line 46, /Users/andrea/Documents/Code/School/Blog/app/assets/stylesheets/static_pages.scss */
+.featured-container {
+  margin: 20px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+/* line 18, /Users/andrea/Documents/Code/School/Blog/app/assets/stylesheets/application.scss */
+.top-content {
+  height: 300px;
+}
+
+/* line 22, /Users/andrea/Documents/Code/School/Blog/app/assets/stylesheets/application.scss */
+.parallax {
+  background-image: url(/assets/carrots-4faeb568f16141c9192ef6456bed631d9f77fd5d33985b1aab1bf44c55c28306.jpg);
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 31, /Users/andrea/Documents/Code/School/Blog/app/assets/stylesheets/application.scss */
+.logo {
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 6.5em;
+  color: #537A2D;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 10px;
+}
+
+/* line 41, /Users/andrea/Documents/Code/School/Blog/app/assets/stylesheets/application.scss */
+nav li {
+  display: inline-block;
+}
+
+/* line 45, /Users/andrea/Documents/Code/School/Blog/app/assets/stylesheets/application.scss */
+.navbar-default .navbar-nav > li > a {
+  text-decoration: none;
+  color: #537A2D;
+  padding: 10px;
+}
+
+/* line 51, /Users/andrea/Documents/Code/School/Blog/app/assets/stylesheets/application.scss */
+.navbar-default {
+  border-color: transparent;
+  background-color: transparent;
+  text-align: center;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+@media (min-width: 768px) {
+  /* line 61, /Users/andrea/Documents/Code/School/Blog/app/assets/stylesheets/application.scss */
+  .navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+  }
+
+  /* line 67, /Users/andrea/Documents/Code/School/Blog/app/assets/stylesheets/application.scss */
+  .navbar .navbar-collapse {
+    text-align: center;
+  }
+}
