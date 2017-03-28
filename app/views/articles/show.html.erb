@@ -1,7 +1,10 @@
 
 <div class="blog-content">
+  <p class="publish-date"><%= @article.created_at.strftime("%B %d, %Y") %></p>
   <h2><%= @article.title %></h2>
   <%= image_tag(@article.image_url) %>
+
+
    
   <p><%= @article.text %></p>
 
