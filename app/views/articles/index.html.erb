@@ -1,14 +1,12 @@
 <h1>Recipes</h1>
 
-<div class="container-fluid">
-  <div class="blog-content">
-    <% @articles.each do |article| %>
-      <div class="article">
-        <h2><%= link_to article.title, article %></h2>
-        <%= image_tag(article.image_url, class: "img-responsive") %> 
-        <p><%= article.text %></p>
-      </div> 
+<div class="container-fluid article-list">
+  
+   <% @articles.each do |article| %>
+     <div class="col-xs-12 col-sm-6 col-md-4 article-preview">
+        <h4><%= link_to article.title, article %></h4> 
+        <%= image_tag(article.image_url, class: "img-responsive small-img") %>
+      </div> <!--end article preview-->
     <% end %>
-  </div> <!--end row-->
-</div> <!-- end container-->
 
+</div> <!-- end container-->

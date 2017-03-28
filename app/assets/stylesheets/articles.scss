@@ -12,17 +12,33 @@
   max-width: 100%;
 }
 
-.article a {
+.article-preview a {
   color: #537A2D;
   font-weight: 400;
   padding-top: 10px;
 }
 
-.article a:hover {
+.article-preview a:hover {
   text-decoration: none;
   color: black;
 }
 
 h2 {
   color: #537A2D;
+}
+
+.small-img {
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.article-list {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.article-preview {
+  padding: 10px;
+  margin: 0 auto;
+  text-align: center;
 }
