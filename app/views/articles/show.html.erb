@@ -3,11 +3,11 @@
   <p class="publish-date"><%= @article.created_at.strftime("%B %d, %Y") %></p>
   <h2><%= @article.title %></h2>
   <%= image_tag(@article.image_url) %>
-
-
    
   <p><%= @article.text %></p>
 
-  <%= link_to 'Back', articles_path %>
-
+  <%= link_to 'Back', articles_path, class: 'btn btn-success btn-xs' %>
+  <%= link_to 'Edit', edit_article_path(@article), class: 'btn btn-success btn-xs' %>
+  <%= link_to 'Destroy', @article, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-success btn-xs' %>
+  <hr>
 </div>
