@@ -12,39 +12,30 @@ h3 {
   margin: 0 auto;
 }
 
-.flex-container {
-  height: 100vh;
-  display: flex;
-  margin: 20px;
-  flex-direction: row;
-}
-
-.left {
-  width: 60%;
-  margin: 10px;
-}
-
-.right {
-  display: flex;
-  width: 30%;
-  margin: 60px 10px 10px 10px;
-}
-
-.image-container {
-  width: 120px;
-  flex-wrap: nowrap;
-  margin-right: 20px;
-}
-
 .featured-image {
-  max-width: 800px;
   display: inline-block;
-  flex-wrap: nowrap;
   margin-bottom: 20px;
+  width: 100%;
 }
 
 .featured-container {
   margin: 20px;
 }
 
+.meet-me {
+  display: inline-block;
+  float: left;
+  margin-top: 20px;
+}
+
+.image-container {
+  display: inline-block;
+  width: 120px;
+  margin-top: 55px;
+  float: left;
+}
+
+hr {
+  width: 80%;
+}
 

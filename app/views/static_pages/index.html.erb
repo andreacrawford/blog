@@ -1,18 +1,21 @@
 
-<div class="flex-container">
-  <div class="left">
-    <div class="featured-container">
-      <h3><%= @featured_article.title %></h3>
-      <%= image_tag(@featured_article.image_url, class: "featured-image") %>
-      <p><%= @featured_article.text %></p>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 col-sm-9 left">
+      <div class="featured-container">
+        <h3><%= @featured_article.title %></h3>
+        <%= image_tag(@featured_article.image_url, class: "featured-image") %>
+        <p><%= @featured_article.text %></p>
+        <hr>
+      </div>
     </div>
-  </div>
 
-  <div class="right">
-    <div class="image-container">
-      <%= image_tag("andrea.jpg", class: "img_responsive") %>
+    <div class="col-xs-12 col-sm-3 right">
+      <div class="image-container">
+        <%= image_tag("andrea.jpg", class: "img_responsive") %>
+      </div>
+      <div class="meet-me">Hi, I'm Andrea and this is my recipe blog where I celebrate my love for plant-based food. In addition to being meat and dairy-free, most of my recipes are free processed foods and sugar. Andrea's Kitchen is a healthy vegan lifestyle blog with a focus on wholesome, simple recipes. Feel free to read my story on my About page, or if you're in a hurry, head straight for my Recipes page and get cooking!</div>
     </div>
-    <p class="meet-me">Hi, I'm Andrea and this is my recipe blog where I celebrate my love for plant-based food. In addition to being meat and dairy-free, most of my recipes are free processed foods and sugar. Andrea's Kitchen is a healthy vegan lifestyle blog with a focus on wholesome, simple recipes. Feel free to read my story on my About page, or if you're in a hurry, head straight for my Recipes page and get cooking!</p>
   </div>
 </div>
 
