@@ -33,12 +33,29 @@
                 <li><%= link_to "Home", static_pages_index_path %></li>
                 <li><%= link_to "Recipes", articles_path %></li>
                 <li><%= link_to "About", static_pages_about_path %></li>
+                <li>
+                <% if user_signed_in? %>
+                  <%= link_to("Log Out", destroy_user_session_path, :method => :delete) %>
+                <% else %>
+                  <%= link_to("Log In", new_user_session_path) %>
+                <% end %>
+                </li>
+
               </ul>
             </div>
           </div> <!--end container fluid -->
         </nav>
       </div> <!--end parallax -->
     </div> <!--end top content -->
+    <% if notice %>
+      <div class="alert alert-success">
+        <%= notice %>
+      </div>
+    <% elsif alert %>
+      <div class="alert alert-warning">
+        <%= alert %>
+      </div>
+    <% end %>
 
     <%= yield %>
   </body>
