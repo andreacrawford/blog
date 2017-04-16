@@ -4,5 +4,18 @@
     <h3>My Story</h3>
     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis. Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</p>
     <h3>Contact</h3>
-    <p>Connect with me! I can be reached at andrea@andreaskitchen.com</p>
+    <div class="form-container">
+      <%= form_tag("/static_pages/thank_you") do %>
+        <div class="form-group">
+          <%= text_field_tag :name, nil, class: "form-control", placeholder: "Enter Name", :required => true %>
+        </div>      
+        <div class="form-group">
+          <%= email_field_tag :email, nil, class: "form-control", placeholder: "Enter Email", :required => true %>
+        </div>
+        <div class="form-group">
+          <%= text_area_tag :message, nil, class: "form-control", placeholder: "Enter Message", :required => true %>
+        </div>      
+      <%= submit_tag "Send", class: "btn btn-success send-button" %>   
+      <% end %>
+    </div><!--end form container -->
 </div>

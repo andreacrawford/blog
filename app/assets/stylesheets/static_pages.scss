@@ -11,6 +11,7 @@ h3 {
 .content {
   width: 75%;
   margin: 0 auto;
+  padding-bottom: 40px;
 }
 
 .featured-image {
@@ -42,4 +43,12 @@ hr {
 
 .front-page {
   margin-top: 40px;
+}
+
+.form-container {
+  max-width: 300px;
+}
+
+.thank-you {
+  text-align: center;
 }
