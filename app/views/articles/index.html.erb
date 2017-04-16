@@ -8,7 +8,13 @@
       <%= image_tag(article.image_url, class: "img-responsive small-img") %>
     </div> <!--end article preview-->
   <% end %>
-  <%= link_to "New Recipe", new_article_path, class: "btn btn-success btn-xs link-buttons" %>
+
+  <% if signed_in? && current_user.admin? %>
+    <div class="is-admin">
+      <%= link_to "New Recipe", new_article_path, class: "btn btn-success btn-xs link-buttons" %>
+    </div>
+  <% end %>
+
   <hr>
 
 </div> <!-- end container-->

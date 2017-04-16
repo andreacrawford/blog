@@ -6,8 +6,12 @@
    
   <p><%= @article.content %></p>
 
-  <%= link_to 'Back', articles_path, class: 'btn btn-success btn-xs' %>
-  <%= link_to 'Edit', edit_article_path(@article), class: 'btn btn-success btn-xs' %>
-  <%= link_to 'Destroy', @article, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-success btn-xs' %>
+  <% if signed_in? && current_user.admin? %>
+    <div class="is-admin">
+      <%= link_to 'Back', articles_path, class: 'btn btn-success btn-xs' %>
+      <%= link_to 'Edit', edit_article_path(@article), class: 'btn btn-success btn-xs' %>
+      <%= link_to 'Destroy', @article, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-success btn-xs' %>
+    </div>
+  <% end %>
   <hr>
 </div>
