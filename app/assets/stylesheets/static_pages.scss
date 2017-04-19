@@ -28,6 +28,7 @@ h3 {
   display: inline-block;
   float: left;
   margin-top: 20px;
+  padding-bottom: 20px;
 }
 
 .image-container {
@@ -59,4 +60,24 @@ hr {
 
 .form-container a {
   color: #537A2D;
+}
+
+.search-bar {
+  display: inline-block;
+}
+
+.search-field {
+  max-width: 250px;
+  display: inline-block;
+  border-radius: 5px 0 0 5px;
+}
+
+.search-button {
+  display: inline-block;
+  border-radius: 0 5px 5px 0;
+}
+
+#search .search-field {
+  height: 34px;
+  margin-right: -5px;
 }

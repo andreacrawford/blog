@@ -15,9 +15,16 @@
         <%= image_tag("andrea.jpg", class: "img_responsive") %>
       </div>
       <div class="meet-me">Hi, I'm Andrea and this is my recipe blog where I celebrate my love for plant-based food. In addition to being meat and dairy-free, most of my recipes are free processed foods and sugar. Andrea's Kitchen is a healthy vegan lifestyle blog with a focus on wholesome, simple recipes. Feel free to read my story on my About page, or if you're in a hurry, head straight for my Recipes page and get cooking!</div>
+
+      <div class="form-group-sm search bar">
+        <%= form_tag("/articles", method: "get", id: "search") do %>
+          <%= text_field_tag(:q, nil, class: "form-control search-field", placeholder: "Search...") %>
+          <%= button_tag(type: "submit", class: "btn btn-success search-button") do %>
+            <span class="glyphicon glyphicon-search"></span>
+          <% end %>
+        <% end %>
+      </div>
     </div>
   </div>
 </div>
-
-
 

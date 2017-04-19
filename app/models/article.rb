@@ -15,4 +15,9 @@ class Article < ApplicationRecord
   def average_rating
     comments.average(:rating).to_f
   end
+
+  def self.search(search_term)
+    Article.where("title LIKE ?", "%#{search_term}%")
+  end
 end
+

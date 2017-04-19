@@ -2,8 +2,13 @@
 class ArticlesController < ApplicationController
 
   def index
-    @articles = Article.all.paginate(:page => params[:page], :per_page => 6)
+    if params[:q]
+      search_term = params[:q]
+      @articles = Article.search(search_term).paginate(:page => params[:page], :per_page => 3)
+    else 
+      @articles = Article.all.paginate(:page => params[:page], :per_page => 3)
   end
+end
 
   def show
     @article = Article.find(params[:id])
