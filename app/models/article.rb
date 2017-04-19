@@ -17,7 +17,6 @@ class Article < ApplicationRecord
   end
 
   def self.search(search_term)
-    Article.where("title LIKE ?", "%#{search_term}%")
+    Article.where("lower(title) LIKE ?", "%#{search_term}%".downcase)
   end
 end
-
