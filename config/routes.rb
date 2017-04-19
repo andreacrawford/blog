@@ -5,7 +5,7 @@ Rails.application.routes.draw do
     delete 'logout', to: 'devise/sessions#destroy'
   end
 
-  devise_for :users
+  devise_for :users, :controllers => { registrations: 'registrations' }
   resources :articles do 
     resources :comments
   end

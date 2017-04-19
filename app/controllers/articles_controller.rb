@@ -7,7 +7,7 @@ class ArticlesController < ApplicationController
 
   def show
     @article = Article.find(params[:id])
-    @comments = @article.comments.order("created_at DESC")
+    @comments = @article.comments.order("created_at DESC").paginate(:page => params[:page], :per_page => 5)
   end
 
   def new

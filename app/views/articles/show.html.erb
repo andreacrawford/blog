@@ -8,6 +8,7 @@
   <div class="comments">
     <%= render partial: "shared/new_comment" %>
     <%= render partial: "shared/comments" %>
+    <%= will_paginate @comments %>
   </div>
   
   <div class="buttons">
