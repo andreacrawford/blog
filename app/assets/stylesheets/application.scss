@@ -77,3 +77,9 @@ nav li {
 .alert {
   text-align: center;
 }
+
+@media (max-width: 768px) {
+  .navbar-default {
+  font-size: 20px;
+  }
+}

@@ -8,11 +8,11 @@
       <%= image_tag(article.image_url, class: "img-responsive small-img") %>
     </div> <!--end article preview-->
   <% end %>
-  <%= will_paginate @articles %>
-
-  <% if signed_in? && current_user.admin? %>
-    <div class="is-admin buttons">
+  
+    <div class="col-xs-12 is-admin buttons">
+      <%= will_paginate @articles %>
       <%= link_to "New Recipe", new_article_path, class: "btn btn-success btn-xs link-buttons" %>
+      <% if signed_in? && current_user.admin? %>
     </div>
   <% end %>
 
