@@ -4,9 +4,9 @@ class ArticlesController < ApplicationController
   def index
     if params[:q]
       search_term = params[:q]
-      @articles = Article.search(search_term).paginate(:page => params[:page], :per_page => 3)
+      @articles = Article.search(search_term).paginate(:page => params[:page], :per_page => 6)
     else 
-      @articles = Article.all.paginate(:page => params[:page], :per_page => 3)
+      @articles = Article.all.paginate(:page => params[:page], :per_page => 6)
   end
 end
 
